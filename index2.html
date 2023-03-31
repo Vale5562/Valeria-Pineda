@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Dinner Plans</h1>
+
+<p>Is Jane coming?</p>
+
+<button onclick="myFunction()">Yes</button>
+
+<p id="demo"></p>
+
+<script>
+
+const Jane = { pizzaIngredients : "Mushroom, onion, peppers, and olives"};
+const person1 = {pizzaSlices : 2}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Jane will eat " + person1.pizzaSlices + " pizza slices, with " + Jane.pizzaIngredients;
+}
+</script>
+
+<p>Is Lisa coming?</p>
+
+<button onclick="myFunction2()">Yes</button>
+
+<p id="x"></p>
+
+<script>
+
+const Lisa = {pizzaIngredients: "Pepperoni, ham, and pineapple"};
+const person2 = {pizzaSlices : 3}
+
+function myFunction2() {
+  document.getElementById("x").innerHTML = "Lisa will eat " + person2.pizzaSlices + " pizza slices, with " + Lisa.pizzaIngredients;
+}
+</script>
+
+<p>Is   Taylor coming?</p>
+
+<button onclick="myFunction3()">Yes</button>
+
+<p id="y"></p>
+
+<script>
+
+const Taylor = {pizzaIngredients: "Extra cheese, pepperoni, sausage, and bacon"};
+const person3 = {pizzaSlices : 3}
+
+function myFunction3() {
+  document.getElementById("y").innerHTML = "Taylor will eat " + person3.pizzaSlices + " pizza slices, with" + Taylor.pizzaIngredients ;
+}
+</script>
+
+<p>Is  Chris coming?</p>
+
+<button onclick="myFunction4()">Yes</button>
+
+<p id="c"></p>
+
+<script>
+
+const Chris = {pizzaIngredients: "Mushroom, sausage, bacon, ham, onion, and peppers"};
+const person4 = {pizzaSlices : 2}
+
+function myFunction4() {
+  document.getElementById("c").innerHTML = "Chris will eat " + person4.pizzaSlices + " pizza slices, with " + Chris.pizzaIngredients ;
+}
+</script>
+
+<p>Is Alissa coming?</p>
+
+<button onclick="myFunction5()">Yes</button>
+
+<p id="a"></p>
+
+<script>
+
+const Alissa = {pizzaIngredients: "Pepperoni, and bacon"};
+const person5 = {pizzaSlices : 1}
+
+function myFunction5() {
+  document.getElementById("a").innerHTML = "Alissa will eat " + person5.pizzaSlices + " pizza slices, with " + Alissa.pizzaIngredients;
+}
+</script>
+
+<p>Is Will coming?</p>
+
+<button onclick="myFunction6()">Yes</button>
+
+<p id="w"></p>
+
+<script>
+
+const Will = {pizzaIngredients: "Extra cheese, sausage, bacon, onion, peppers, and olives"};
+const person6 = {pizzaSlices : 2}
+
+function myFunction6() {
+  document.getElementById("w").innerHTML = "Will will eat " + person6.pizzaSlices + " pizza slices, with " + Will.pizzaIngredients;
+}
+</script>
+
+<p>Is Jessica coming?</p>
+
+<button onclick="myFunction7()">Yes</button>
+
+<p id="j"></p>
+
+<script>
+
+const Jessica = {pizzaIngredients: "Pepperoni, bacon, ham, pineapple, onion, and peppers"};
+const person7 = {pizzaSlices : 2}
+
+function myFunction7() {
+  document.getElementById("j").innerHTML = "Will will eat " + person7.pizzaSlices + " pizza slices, with " + pizzaIngredients;
+}
+</script>
+
+<p>Here you can add the number of pizza slices:</p>
+
+<style>  
+    h1 {  
+        text-align: center;  
+        padding: 23px;  
+        background-color: skyblue;  
+        color: white;  
+        }  
+      
+    #clear{  
+    width: 270px;  
+    border: 3px solid gray;  
+        border-radius: 3px;  
+        padding: 20px;  
+        background-color: rgb(32, 2, 2);  
+    }  
+      
+    .formstyle  
+    {  
+    width: 300px;  
+    height: 530px;  
+    margin: auto;  
+    border: 3px solid skyblue;  
+    border-radius: 5px;  
+    padding: 20px;  
+    }  
+      
+      
+      
+    input  
+    {  
+    width: 20px;  
+    background-color: skyblue;  
+    color: white;  
+    border: 3px solid gray;  
+        border-radius: 5px;  
+        padding: 26px;  
+        margin: 5px;  
+        font-size: 15px;  
+    }  
+      
+      
+    #calc{  
+    width: 250px;  
+    border: 5px solid black;  
+        border-radius: 3px;  
+        padding: 20px;  
+        margin: auto;  
+    }  
+      
+    </style>  
+
+<form name = "form1">  
+      
+    <!-- This input box shows the button pressed by the user in calculator. -->  
+  <input id = "calc" type ="text" name = "answer"> <br> <br>  
+  <!-- Display the calculator button on the screen. -->  
+  <!-- onclick() function display the number prsses by the user. -->  
+  <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+  <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+  <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+   <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+  <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+  <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+  <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+  <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+  <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">  
+  <br> <br>  
+    
+    
+  <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">  
+  <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+    <input type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+    <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->  
+  <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">  
+  <br>   
+  <!-- Display the Cancel button and erase all data entered by the user. -->  
+  <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >  
+  <br>   
+    
+</form>  
+</div>  
+
+</body>  
+</html>  
+
